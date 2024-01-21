@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="box"> 
+            <h1>Peace Books
+            </h1>
+            <div class="d-grid gap-2 d-md-block btn-group">
+                <button class="btn btn-secondary" type="button"><a href="./contato.html">Contato</a></button>
+                <button class="btn btn-secondary" type="button"><a href="./sobre.html">Sobre</a></button>
+                <button class="btn btn-secondary" id="cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+      
+        </header>
+        <nav class="box">
+            <p class="title">Categorias</p>
+
+            <ul>
+                <!-- Ficção -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ficção
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Ficção Científica</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                        <li><a class="dropdown-item" href="#">Mistério/Thriller</a></li>
+                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                        <li><a class="dropdown-item" href="#">Conto</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Não Ficção -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Não Ficção
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">História</a></li>
+                        <li><a class="dropdown-item" href="#">Biografia</a></li>
+                        <li><a class="dropdown-item" href="#">Autobiografia</a></li>
+                        <li><a class="dropdown-item" href="#">Ensaios</a></li>
+                        <li><a class="dropdown-item" href="#">Ciência</a></li>
+                        <li><a class="dropdown-item" href="#">Política</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Literatura Clássica -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Literatura Clássica
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Livros Canônicos</a></li>
+                        <li><a class="dropdown-item" href="#">Épicos</a></li>
+                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                        <li><a class="dropdown-item" href="#">Poesia Clássica</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Literatura Infantojuvenil -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Literatura Infantojuvenil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Livros Infantis</a></li>
+                        <li><a class="dropdown-item" href="#">Literatura Juvenil</a></li>
+                        <li><a class="dropdown-item" href="#">Contos de Fadas</a></li>
+                        <li><a class="dropdown-item" href="#">Livros Ilustrados</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Autoajuda e Desenvolvimento Pessoal -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Autoajuda e Desenvolvimento Pessoal
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Autoajuda</a></li>
+                        <li><a class="dropdown-item" href="#">Psicologia</a></li>
+                        <li><a class="dropdown-item" href="#">Desenvolvimento Pessoal</a></li>
+                        <li><a class="dropdown-item" href="#">Motivação</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Arte e Fotografia -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Arte e Fotografia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">História da Arte</a></li>
+                        <li><a class="dropdown-item" href="#">Fotografia</a></li>
+                        <li><a class="dropdown-item" href="#">Arquitetura</a></li>
+                        <li><a class="dropdown-item" href="#">Design</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Ciência e Tecnologia -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ciência e Tecnologia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciência Popular</a></li>
+                        <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                        <li><a class="dropdown-item" href="#">Medicina</a></li>
+                        <li><a class="dropdown-item" href="#">Computação</a></li>
+                    </ul>
+                </li>
+            
+                <!-- História e Cultura -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        História e Cultura
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">História Mundial</a></li>
+                        <li><a class="dropdown-item" href="#">História Local</a></li>
+                        <li><a class="dropdown-item" href="#">Culturas e Civilizações</a></li>
+                        <li><a class="dropdown-item" href="#">Antropologia</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Religião e Espiritualidade -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Religião e Espiritualidade
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Religiões Mundiais</a></li>
+                        <li><a class="dropdown-item" href="#">Filosofia Espiritual</a></li>
+                        <li><a class="dropdown-item" href="#">Espiritualidade Moderna</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Mistério e Suspense -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mistério e Suspense
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Detetive</a></li>
+                        <li><a class="dropdown-item" href="#">Suspense Psicológico</a></li>
+                        <li><a class="dropdown-item" href="#">Policial</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Culinária e Gastronomia -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Culinária e Gastronomia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Receitas</a></li>
+                        <li><a class="dropdown-item" href="#">História da Culinária</a></li>
+                        <li><a class="dropdown-item" href="#">Nutrição</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Viagens -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Viagens
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Guia de Viagens</a></li>
+                        <li><a class="dropdown-item" href="#">Aventuras de Viagem</a></li>
+                        <li><a class="dropdown-item" href="#">Memórias de Viagem</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Ciência Ficção e Fantasia -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ciência Ficção e Fantasia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ficção Científica Clássica</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasia Épica</a></li>
+                        <li><a class="dropdown-item" href="#">Distopia</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Poesia -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Poesia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Poesia Contemporânea</a></li>
+                        <li><a class="dropdown-item" href="#">Poesia Clássica</a></li>
+                        <li><a class="dropdown-item" href="#">Poesia Experimental</a></li>
+                    </ul>
+                </li>
+            
+                <!-- Humor -->
+                <li> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Humor
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sátira</a></li>
+                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                        <li><a class="dropdown-item" href="#">Cartuns</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="box">
+
+            <section>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="O que você está buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Encontrar</button>
+                  </form>
+            </section>
+
+            <article>
+                <h2>Conheça "Dom Casmurro" de Machado de Assis</h2>
+                <p>"Dom Casmurro" é uma obra-prima da literatura brasileira escrita por Machado de Assis. Publicado pela primeira vez em 1899, o romance é uma profunda exploração da psicologia humana, narrado pelo enigmático Bentinho. A trama envolvente e as intricadas relações interpessoais fazem deste livro uma leitura clássica e atemporal. Viaje para o Rio de Janeiro do século XIX e mergulhe nas emoções e dilemas do protagonista enquanto ele enfrenta questões de ciúmes, amor e traição.</p>
+            </article>
+
+            <article>
+                <h2>Descubra "1984" de George Orwell</h2>
+                <p>"1984" de George Orwell é uma distopia brilhante que continua a fascinar leitores desde sua publicação em 1949. Ambientado em um futuro sombrio e totalitário, o livro explora temas de vigilância, manipulação e resistência. Através da perspicaz narrativa de Orwell, somos levados a refletir sobre questões sociais e políticas que permanecem relevantes até os dias de hoje. Embarque nesta obra que desafia a mente e a visão de mundo.</p>
+            </article>
+
+            <article>
+                <h2>Explore "A Menina que Roubava Livros" de Markus Zusak</h2>
+                <p>"A Menina que Roubava Livros" de Markus Zusak é uma história comovente e única ambientada na Alemanha durante a Segunda Guerra Mundial. Contada pela Morte, a narrativa segue Liesel Meminger, uma jovem que encontra consolo nos livros durante tempos turbulentos. Com uma prosa poética e uma trama emocionante, o livro explora a importância da leitura e da empatia. Conheça Liesel e sua jornada extraordinária enquanto ela descobre o poder das palavras em meio ao caos da guerra.</p>
+            </article>
+        </main>
+        <aside class="box">
+                <h2>Desperte Seus Sentidos na Nossa Cafeteria!</h2>
+                <p>Também temos cafeteria em nosso espaço! Em nossa cafeteria, oferecemos uma experiência única para os amantes de café. Desfrute de blends exclusivos, preparados por baristas apaixonados, enquanto relaxa em um ambiente aconchegante. De cafés aromáticos a deliciosos acompanhamentos, cada visita é uma jornada para os sentidos. Venha saborear momentos especiais conosco!</p>
+                <a href="#">Descubra o Sabor</a>    
+        </aside>
+        <footer class="box">
+            <section class="footer-section">
+                <h3>Localização</h3>
+                <p>Rua da Livraria, 123</p>
+                <p>Cidade dos Livros</p>
+                <p>CEP: 12345-678</p>
+            </section>
+            <section class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-envelope"></i> info@livraria.com</p>
+                <p><i class="fa-solid fa-phone"></i> Telefone: (123) 456-7890</p>
+            </section>
+            <section class="footer-section">
+                <h3>Siga-nos</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* CSS utilizado para todas as páginas */
+
+/* Estruturas de componentes como header e footer.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #E5E1D7;
+    height: 100vh;
+}
+
+header{
+    position: sticky;
+    background-image: url('../imgs/banner.png');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    grid-area: header;
+    height: 25vh;
+    background-color: #282A22;
+    color: #d9c2b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: #FCAC3D;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-outline-success{
+    border: 1px solid #e55b13;
+    background-color:  #e55b13;
+    color: white;
+}
+.btn-outline-success:hover{
+    background-color:  #FCAC3D;
+    border: 1px solid #FCAC3D;
+}
+
+.dropdown-toggle{
+    overflow: auto;
+}
+
+.btn-secondary{
+    background-color: #e55b13;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    background-color:  #FCAC3D;
+}
+
+.btn-group{
+    align-self: flex-start;
+}
+
+main{
+    grid-area: main;
+    margin: 1rem;
+}
+
+footer{
+    margin: 1rem;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-section{
+    height: 100%;
+}
+
+.social-links{
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+a i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+a i:hover{
+    color: #003060;
+}
+
+h3{
+    margin-bottom: 0.5rem;
+}
+
+.box{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    text-align: justify;
+}
+
+header a{
+    color: white;
+}
+
+a{  
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+
+    header h1{
+        align-self: flex-end;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-section{
+        height: auto;
+    }
+
+}

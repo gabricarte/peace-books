@@ -1,0 +1,54 @@
+/* Layout da página index.html */
+
+.wrapper{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'nav main aside'
+    'footer footer footer'
+}
+
+article{
+    margin: 1rem 0;
+}
+
+nav{
+    grid-area: nav;
+    margin: 1rem;
+}
+
+nav ul li{
+    margin: 1rem 0;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+aside a{
+    color: blue;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+    .wrapper{
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        'header header header'
+        'nav nav nav'
+        'main main main'
+        'aside aside aside'
+        'footer footer footer'
+    }
+
+}

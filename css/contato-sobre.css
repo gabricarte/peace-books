@@ -1,0 +1,41 @@
+/* CSS da estrutura das páginas "contato.html" e "sobre.html" */
+
+.wrapper{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'main main'
+}
+
+main{
+    display: flex;
+}
+
+section{
+    width: 50%;
+}
+
+.one-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{
+    width: 70%;
+}
+
+@media screen and (max-width:767px) {
+    
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
