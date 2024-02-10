@@ -42,13 +42,12 @@ aside a{
 
 @media screen and (max-width:767px) {
     .wrapper{
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        'header header header'
-        'nav nav nav'
-        'main main main'
-        'aside aside aside'
-        'footer footer footer'
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer'
     }
-
 }
